@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CakeOrder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-/*
+        
         //No.1
         System.out.println("Birthday Cake's Details:");
         System.out.print("Enter a message on cake: ");
@@ -35,7 +35,7 @@ public class CakeOrder {
         System.out.println(order2);
 
         System.out.println();
-*/
+        
         System.out.println("Choux's Details:");
         System.out.print("Enter a flavor: ");
         String choux_flavor = scanner.next();
@@ -47,7 +47,6 @@ public class CakeOrder {
         System.out.println(order3);
 
         //No.7
-        //System.out.println("Total price = " + (order1.calculateTotalPrice() + order2.calculateTotalPrice()));
-        System.out.println("Total price = " + (order3.calculateTotalPrice()));
+        //System.out.println("Total price = " + (order1.calculateTotalPrice() + order2.calculateTotalPrice() + (order3.calculateTotalPrice()));
     }
 }
