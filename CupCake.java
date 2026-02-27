@@ -24,7 +24,7 @@ public class CupCake extends Bakery{
     @Override
     public int getPackingCost(){
         if(isPackingBox())
-            return getBoxNumber() * getPackingCost();
+            return getBoxNumber() * super.getPackingCost();
         return 0;
     }
 
@@ -36,7 +36,7 @@ public class CupCake extends Bakery{
     public String toString(){
         return super.toString() +
                 "\nCup Cake (" + getFlavor() + ") with " +
-                (isPackingBox() ? getBoxNumber() + " box " : " ") + getBagNumber() + " bag" +
+                (isPackingBox() ? getBoxNumber() + " Box " : " ") + getBagNumber() + " Bag" +
                 "\nTotal price of cup cake = " + calculateTotalPrice();
     }
 }
